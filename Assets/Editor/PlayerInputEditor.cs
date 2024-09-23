@@ -120,13 +120,4 @@ public class PlayerInputEditor : Editor
             GUILayout.Label("El juego no está corriendo. Las acciones solo pueden ser simuladas en modo de juego.");
         }
     }
-
-    private void ShowBindings(string actionName, InputAction inputAction)
-    {
-        GUILayout.Box($"Action: {actionName}");
-        foreach (InputBinding binding in inputAction.bindings)
-        {
-            GUILayout.Label($" Binding: {binding.path}");
-        }
-    }
 }
